@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
         String answer2;
         Answer = (EditText) this.findViewById(R.id.Answer);
         answer2 = Answer.getText().toString().toLowerCase();
-        if (answer2.equals("Android") || answer2.equals("android")) {
+        if (answer2.equals("Android")) {
             ans2_score2 = 1;
         } else {
             ans2_score2 = 0;
@@ -79,7 +79,7 @@ public class MainActivity extends AppCompatActivity {
             answer3_choice1 = checkanswer1.isChecked();//correct
             answer3_choice2 = checkanswer2.isChecked();
             answer3_choice3 = checkanswer3.isChecked();
-            if (answer3_choice1 && !answer3_choice2 && answer3_choice3) {
+            if (answer3_choice1 && answer3_choice2 && answer3_choice3) {
                 ans3_score3 = 1;
             } else {
                 ans3_score3 = 0;
@@ -103,13 +103,14 @@ public class MainActivity extends AppCompatActivity {
             if (final_score == 10) {
                 resultsDisplay = "Good! You scored 10 out of 10";
             } else {
-                resultsDisplay = " score " + final_score + " out of 10";
+                resultsDisplay = " score " + final_score + " out of 5";
                 Context context = getApplicationContext();
                 int duration = Toast.LENGTH_LONG;
                 Toast toast = Toast.makeText(context, resultsDisplay, duration);
                 toast.setGravity(Gravity.CENTER, 0, 0);
                 toast.show();
             }
+
 
         }
     }
