@@ -74,12 +74,15 @@ public class MainActivity extends AppCompatActivity {
             }
         //Checking the score for question 4
             Boolean answer3_choice1;
-            checkanswer1 = (CheckBox) this.findViewById(R.id.checkanswer1);
+        boolean  answer3_choice2 ;
+        checkanswer1 = (CheckBox) this.findViewById(R.id.checkanswer1);
             checkanswer2 = (CheckBox) this.findViewById(R.id.checkanswer2);
             checkanswer3 = (CheckBox) this.findViewById(R.id.checkanswer3);
             answer3_choice1 = checkanswer1.isChecked();//correct
+        answer3_choice2 = checkanswer2.isChecked();//correct
 
-            if (answer3_choice1 ) {
+
+        if (answer3_choice1 ||  answer3_choice2  ) {
                 ans3_score3 = 1;
             } else {
                 ans3_score3 = 0;
@@ -94,13 +97,13 @@ public class MainActivity extends AppCompatActivity {
          answer7_choice1 = checkanswer4.isChecked();
         answer7_choice2 = checkanswer5.isChecked();
         answer7_choice3 = checkanswer6.isChecked();
-         if (!answer7_choice1 && !answer7_choice2 && answer7_choice3 ) {
+         if (answer7_choice1 || answer7_choice2 && ! answer7_choice3 ) {
              ans5_score5 = 1;
         } else {
              ans5_score5 = 0;
         }
          //   displayScore
-            final_score = ans1_score1  + ans3_score3 + ans4_score4 + ans5_score5+ans2_score2;
+            final_score = ans1_score1  + ans3_score3 + ans4_score4 + ans5_score5 + ans2_score2;
 
             if (final_score == 5) {
                 resultsDisplay = "Good! You scored 5 out of 5";

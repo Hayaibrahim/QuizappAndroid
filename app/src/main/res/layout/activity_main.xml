@@ -46,8 +46,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:hint="Answer."
-            android:imeOptions="actionDone"
-            android:inputType="textCapWords"
+             android:inputType="textCapWords"
             android:padding="12dp" />
 
         <TextView
@@ -107,7 +106,7 @@
             android:id="@+id/textView3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="is a specific type of two-states button that can be either checked or unchecked"
+            android:text="is a specific type of two-states button that can be either ....... or .........?"
             android:textColor="#ab63a2"
             android:textSize="15sp"
             android:textStyle="bold" />
@@ -116,27 +115,25 @@
             android:id="@+id/checkanswer1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="CheckBox" />
+            android:text="checked " />
 
         <CheckBox
             android:id="@+id/checkanswer2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:checked="false"
-            android:text="Button" />
+             android:text="unchecked" />
 
         <CheckBox
             android:id="@+id/checkanswer3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:checked="false"
-            android:text="Relative Layout" />
+             android:text="Relative Layout" />
 
         <TextView
             android:id="@+id/textView4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text=" A button consists of text or an icon (or both text and an icon) that communicates what action occurs when the user touches it."
+            android:text=" A button consists of text or an icon (or both.......and an......) that communicates what action occurs when the user touches it."
             android:textColor="#ab63a2"
             android:textSize="15sp"
             android:textStyle="bold" />
@@ -145,23 +142,20 @@
             android:id="@+id/checkanswer4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:checked="false"
-            android:text="Linear Layout"
+             android:text="text"
             tools:ignore="HardcodedText" />
 
         <CheckBox
             android:id="@+id/checkanswer5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:checked="false"
-            android:text="CheckBox" />
+             android:text="icon" />
 
         <CheckBox
             android:id="@+id/checkanswer6"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:checked="false"
-            android:text="Button" />
+             android:text="Button" />
 
         <Button
             android:id="@+id/total"
