@@ -146,7 +146,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:checked="false"
-            android:text="Button"
+            android:text="Linear Layout"
             tools:ignore="HardcodedText" />
 
         <CheckBox
@@ -161,7 +161,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:checked="false"
-            android:text="Linear Layout" />
+            android:text="Button" />
 
         <Button
             android:id="@+id/total"

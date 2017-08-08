@@ -26,7 +26,6 @@ public class MainActivity extends AppCompatActivity {
     CheckBox checkanswer5;
     CheckBox checkanswer6;
     Button total;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,7 +34,6 @@ public class MainActivity extends AppCompatActivity {
 
         setContentView(R.layout.activity_main);
     }
-
     public void Total(View view) {
         CharSequence resultsDisplay;
         Log.e(LOG_TAG, " " + this.findViewById(R.id.checkanswer3));
@@ -45,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
         int ans4_score4;
         int ans5_score5;
         int final_score;
-
+//Checking the score for question 1
 
         String answer8;
         Answer = (EditText) this.findViewById(R.id.Answer);
@@ -55,15 +53,16 @@ public class MainActivity extends AppCompatActivity {
         } else {
             ans2_score2= 0;
         }
-
-            Boolean answer1;
+//Checking the score for question 2
+            Boolean answer2;
             Answer2 = (RadioButton) this.findViewById(R.id.answer2);
-            answer1 = Answer2.isChecked();
-            if (answer1) {
+            answer2 = Answer2.isChecked();
+            if (answer2) {
                 ans1_score1 = 1;
             } else {
                 ans1_score1 = 0;
             }
+        //Checking the score for question 3
             Boolean answer5;
             Answer5 = (RadioButton) this.findViewById(R.id.answer4);
             answer5 = Answer5.isChecked();//correct
@@ -73,35 +72,34 @@ public class MainActivity extends AppCompatActivity {
                 ans4_score4 = 0;
 
             }
+        //Checking the score for question 4
             Boolean answer3_choice1;
-            Boolean answer3_choice2;
-            Boolean answer3_choice3;
             checkanswer1 = (CheckBox) this.findViewById(R.id.checkanswer1);
             checkanswer2 = (CheckBox) this.findViewById(R.id.checkanswer2);
             checkanswer3 = (CheckBox) this.findViewById(R.id.checkanswer3);
-
             answer3_choice1 = checkanswer1.isChecked();//correct
-            answer3_choice2 = checkanswer2.isChecked();
-            answer3_choice3 = checkanswer3.isChecked();
-            if (answer3_choice1 && answer3_choice2 && answer3_choice3) {
+
+            if (answer3_choice1 ) {
                 ans3_score3 = 1;
             } else {
                 ans3_score3 = 0;
             }
-            Boolean answer7_choice1;
-            Boolean answer7_choice2;
-            Boolean answer7_choice3;
-            checkanswer4 = (CheckBox) this.findViewById(R.id.checkanswer4);//correct
-            checkanswer5 = (CheckBox) this.findViewById(R.id.checkanswer5);
-            checkanswer6 = (CheckBox) this.findViewById(R.id.checkanswer6);
-            answer7_choice1 = checkanswer4.isChecked();
-            answer7_choice2 = checkanswer5.isChecked();
-            answer7_choice3 = checkanswer6.isChecked();
-            if (answer7_choice1 && !answer7_choice1 && !answer7_choice3) {
-                ans5_score5 = 1;
-            } else {
-                ans5_score5 = 0;
-            }
+        //Checking the score for question 5
+        Boolean answer7_choice1;
+        Boolean answer7_choice2;
+        Boolean answer7_choice3;
+         checkanswer4 = (CheckBox) this.findViewById(R.id.checkanswer4);
+        checkanswer5 = (CheckBox) this.findViewById(R.id.checkanswer5);
+        checkanswer6 = (CheckBox) this.findViewById(R.id.checkanswer6);
+         answer7_choice1 = checkanswer4.isChecked();
+        answer7_choice2 = checkanswer5.isChecked();
+        answer7_choice3 = checkanswer6.isChecked();
+         if (!answer7_choice1 && !answer7_choice2 && answer7_choice3 ) {
+             ans5_score5 = 1;
+        } else {
+             ans5_score5 = 0;
+        }
+         //   displayScore
             final_score = ans1_score1  + ans3_score3 + ans4_score4 + ans5_score5+ans2_score2;
 
             if (final_score == 5) {
