@@ -45,13 +45,17 @@ public class MainActivity extends AppCompatActivity {
         int ans4_score4;
         int ans5_score5;
         int final_score;
-        String answer2;
+
+
+        String answer8;
         Answer = (EditText) this.findViewById(R.id.Answer);
-        answer2 = Answer.getText().toString().toLowerCase();
-        if (answer2.equals("Android")) {
+        answer8 = Answer.getText().toString().toLowerCase();
+        if (answer8.equals("android")) {
             ans2_score2 = 1;
         } else {
-            ans2_score2 = 0;
+            ans2_score2= 0;
+        }
+
             Boolean answer1;
             Answer2 = (RadioButton) this.findViewById(R.id.answer2);
             answer1 = Answer2.isChecked();
@@ -98,10 +102,10 @@ public class MainActivity extends AppCompatActivity {
             } else {
                 ans5_score5 = 0;
             }
-            final_score = ans1_score1 + ans2_score2 + ans3_score3 + ans4_score4 + ans5_score5;
+            final_score = ans1_score1  + ans3_score3 + ans4_score4 + ans5_score5+ans2_score2;
 
-            if (final_score == 10) {
-                resultsDisplay = "Good! You scored 10 out of 10";
+            if (final_score == 5) {
+                resultsDisplay = "Good! You scored 5 out of 5";
             } else {
                 resultsDisplay = " score " + final_score + " out of 5";
                 Context context = getApplicationContext();
@@ -114,4 +118,3 @@ public class MainActivity extends AppCompatActivity {
 
         }
     }
-}

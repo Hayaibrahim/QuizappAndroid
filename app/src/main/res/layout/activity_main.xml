@@ -169,7 +169,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:background="#fad2ff"
-            android:onClick="Total"
+android:onClick="Total"
             android:text="Total" />
 
     </LinearLayout>
