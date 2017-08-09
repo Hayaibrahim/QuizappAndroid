@@ -46,7 +46,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:hint="Answer."
-             android:inputType="textCapWords"
+            android:inputType="textCapWords"
             android:padding="12dp" />
 
         <TextView
@@ -85,21 +85,23 @@
             android:textColor="#ab63a2"
             android:textSize="15sp"
             android:textStyle="bold" />
+
         <RadioGroup
             android:id="@+id/RadioGroup1"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
-        <RadioButton
-            android:id="@+id/answer4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Relative Layout" />
 
-        <RadioButton
-            android:id="@+id/answer5"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Linear Layout" />
+            <RadioButton
+                android:id="@+id/answer4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Relative Layout" />
+
+            <RadioButton
+                android:id="@+id/answer5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Linear Layout" />
         </RadioGroup>
 
         <TextView
@@ -121,13 +123,13 @@
             android:id="@+id/checkanswer2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-             android:text="unchecked" />
+            android:text="unchecked" />
 
         <CheckBox
             android:id="@+id/checkanswer3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-             android:text="Relative Layout" />
+            android:text="Relative Layout" />
 
         <TextView
             android:id="@+id/textView4"
@@ -142,20 +144,20 @@
             android:id="@+id/checkanswer4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-             android:text="text"
+            android:text="text"
             tools:ignore="HardcodedText" />
 
         <CheckBox
             android:id="@+id/checkanswer5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-             android:text="icon" />
+            android:text="icon" />
 
         <CheckBox
             android:id="@+id/checkanswer6"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-             android:text="Button" />
+            android:text="Button" />
 
         <Button
             android:id="@+id/total"
@@ -163,7 +165,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:background="#fad2ff"
-android:onClick="Total"
+            android:onClick="Total"
             android:text="Total" />
 
     </LinearLayout>
